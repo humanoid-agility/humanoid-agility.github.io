@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Humanoid Parkour Learning">
+  <meta name="keywords" content="Legged Locomotion, Agile Locomotion, Parkour, Reinforcement Learning, Visuomotor Control, Sim-to-Real Transfer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Humanoid Parkour Learning</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <link rel="icon" href="./favicon.ico">
+
+  <meta property="og:site_name" content="Humanoid Parkour Learning" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:title" content="Humanoid Parkour Learning" />
+  <meta property="og:description" content="anonymous" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="static/images/preview.gif" />
+  <meta property="og:image:secure" content="static/images/preview.gif" />
+  <meta property="og:video" content="https://www.youtube.com/embed/9ilYqoQEQeg" />
+  <meta property="og:video:secure" content="https://www.youtube.com/embed/9ilYqoQEQeg" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="720" />
+
+  <meta property="article:publisher" content="https://ziwenzhuang.github.io" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Humanoid Parkour Learning" />
+  <meta name="twitter:description" content="anonymous" />
+  <meta name="twitter:url" content="" />
+  <meta name="twitter:image" content="static/images/preview.gif" />
+  <meta name="twitter:site" content="@ziwenzhuang_leo" />
+  <meta name="twitter:card" content="player" />
+  <meta name="twitter:player" content="https://www.youtube.com/embed/9ilYqoQEQeg" />
+  <meta name="twitter:player:width" content="1280" />
+  <meta name="twitter:player:height" content="720" />
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+
+
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Humanoid Parkour Learning</h1>
+          <div class="is-size-5 publication-authors">
+            Anonymous Submission
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;">Parkour</h2>
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video autoplay loop muted playsinline src="./resources/parkour_hurdle_tilted_jump0.4m.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <video autoplay loop muted playsinline src="./resources/parkour_jump0.4m_leap0.4m_down0.4m.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;">Jump Up</h2>
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video autoplay loop muted playsinline src="./resources/jump/20240415_jump0.2m.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <video autoplay loop muted playsinline src="./resources/jump/20240415_jump0.4m.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video autoplay loop muted playsinline src="./resources/jump/20240424_jump0.4m.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <video autoplay loop muted playsinline src="./resources/jump/20240425_jump0.4m.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;">Stairs</h2>
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video autoplay loop muted playsinline src="./resources/stairsup/20240425_stairsup.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <video autoplay loop muted playsinline src="./resources/stairsup/20240425_stairsup_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video autoplay loop muted playsinline src="./resources/stairsdown/20240426_stairsdown_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <video autoplay loop muted playsinline src="./resources/stairsdown/20240426_stairsdown_2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;">Tilted Ramp</h2>
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video autoplay loop muted playsinline src="./resources/tilted/20240424_tilted.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <video autoplay loop muted playsinline src="./resources/tilted/20240424_tilted_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;">Jump Down</h2>
+    <div class="columns is-centered">
+      <div class="column is-three-fifths is-centered has-text-centered">
+        <video autoplay loop muted playsinline src="./resources/down/20240426_down0.4m.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;">Leap</h2>
+    <div class="columns is-centered">
+      <div class="column is-three-fifths is-centered has-text-centered">
+        <video autoplay loop muted playsinline src="./resources/leap/20240426_leap0.4m.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-three-fifths is-centered has-text-centered">
+        <video autoplay loop muted playsinline src="./resources/leap/20240530_leap0.8.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;">Slope</h2>
+    <div class="columns is-centered">
+      <div class="column is-three-fifths is-centered has-text-centered">
+        <video autoplay loop muted playsinline src="./resources/slope/20240426_slope.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;">Robust Walking</h2>
+    <div class="columns is-centered">
+      <div class="column is-three-fifths is-centered has-text-centered">
+        <video autoplay loop muted playsinline id="indoorRobustWalking" src="./resources/indoor-robust-walking-blured.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-three-fifths is-centered has-text-centered">
+        <video autoplay loop muted playsinline id="outdoorRobustWalking" src="./resources/outdoor-robust-walking-blured.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;">Teleop (out-of-distribution test)</h2>
+    <div class="content has-text-justified">
+      <p>
+        In this section, we show the performance of teleoperation by overriding the arm action. In this out-of-distribution test, we show that the parkour policy can be robust to the teleoperation, even though the arm movment is not trained in the parkour task.
+      </p>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-three-fifths is-centered has-text-centered">
+        <video autoplay loop muted playsinline id="indoorRobustWalking" src="./resources/teleop/hold_and_throw.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-three-fifths is-centered has-text-centered">
+        <video autoplay loop muted playsinline id="outdoorRobustWalking" src="./resources/teleop/swinging.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>Page template borrowed from <a href="https://nerfies.github.io/"><span class="dnerf">Nerfies</span></a>.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
